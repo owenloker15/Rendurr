@@ -1,0 +1,127 @@
+# .clang-format
+---
+Language: Cpp
+
+# Base style
+BasedOnStyle: LLVM
+
+# Modern C++
+Standard: Latest
+
+# Indentation
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+
+# Line length
+ColumnLimit: 100
+
+# Braces
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: true
+  AfterControlStatement: Never
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterStruct: true
+  AfterUnion: true
+  BeforeCatch: true
+  BeforeElse: true
+  IndentBraces: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+
+# Functions
+AllowShortFunctionsOnASingleLine: Empty
+AlwaysBreakAfterReturnType: None
+AlwaysBreakTemplateDeclarations: Yes
+
+# Control statements
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
+
+# Classes / constructors
+ConstructorInitializerIndentWidth: 4
+BreakConstructorInitializersBeforeComma: false
+PackConstructorInitializers: NextLine
+
+# Spaces
+SpaceBeforeParens: ControlStatements
+SpaceBeforeCpp11BracedList: false
+SpacesInAngles: Never
+SpacesInContainerLiterals: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+
+# Pointer/reference style
+PointerAlignment: Left
+ReferenceAlignment: Left
+DerivePointerAlignment: false
+
+# Includes
+SortIncludes: true
+IncludeBlocks: Regroup
+
+IncludeCategories:
+  - Regex: '^<.*>$'
+    Priority: 1
+  - Regex: '^".*"$'
+    Priority: 2
+
+# Namespaces
+CompactNamespaces: false
+FixNamespaceComments: true
+
+# Empty lines
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+
+# Alignment
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignOperands: Align
+AlignTrailingComments: true
+
+# Switches
+IndentCaseLabels: true
+IndentCaseBlocks: true
+
+# Templates
+AlwaysBreakAfterDefinitionReturnType: None
+
+# Bin packing
+BinPackArguments: false
+BinPackParameters: false
+
+# Lambdas
+AllowShortLambdasOnASingleLine: Empty
+
+# C++11+ features
+Cpp11BracedListStyle: true
+
+# Access modifiers
+EmptyLineBeforeAccessModifier: LogicalBlock
+AccessModifierOffset: -4
+
+# Comments
+ReflowComments: true
+
+# Preprocessor
+IndentPPDirectives: None
+
+# Penalties (helps formatter make sane choices)
+PenaltyBreakBeforeFirstCallParameter: 100
+PenaltyBreakComment: 300
+PenaltyBreakString: 1000
+PenaltyExcessCharacter: 100
+PenaltyReturnTypeOnItsOwnLine: 200
+
+# Misc
+NamespaceIndentation: All
+SeparateDefinitionBlocks: Always
+...
